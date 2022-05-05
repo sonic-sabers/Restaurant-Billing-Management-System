@@ -1,0 +1,74 @@
+#MENUCARD h1{
+    text-align: center;
+    font-size: 3.5rem;
+    text-decoration: underline;
+    /* border: 1px solid orangered; */
+}
+
+#MENUCARD section{
+    text-align: center;
+    /* border: 1rem solid black; */
+    padding: 0;
+    margin: 0;
+}
+
+section .gpcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+    column-gap: 1rem;
+}
+
+section .gpcontainer .group{
+    border-radius: 2rem;
+    background: rgb(253,107,29);
+    background-image: radial-gradient(circle, #fffd00, #f1bb00, #d47d00, #ab4503, #790909);
+    box-shadow: 0.5rem 0.5rem 1rem rgb(110, 86, 54);
+}
+
+section .gpcontainer .group h2{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+section .gpcontainer .group .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+section .gpcontainer .group .container div{
+    margin-top: 1rem;
+    
+}
+ 
+section .gpcontainer .group .container .menuDish{
+    text-align: center;
+    font-size: 1.2rem;
+    font-style:oblique;
+    font-weight: bolder;
+    padding: 0.2rem;
+    margin-right: 1rem;
+}
+section .gpcontainer .group .container .menuPrice{
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+section .gpcontainer .group .container .menuOrder{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-left: 1rem;
+    background-color: rgb(0, 60, 255);
+    color: aliceblue;
+    border-radius: 1rem;
+    
+}
+section .gpcontainer .group .container .menuOrder:hover{
+    background-color: rgb(0, 110, 255);
+    cursor: pointer;
+
+}

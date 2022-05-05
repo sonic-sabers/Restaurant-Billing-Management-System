@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+#bigDesign{
+    grid-template-columns: 65% auto;
+    column-gap: 1rem;
+}
+
+.whole{
+    opacity: 0;
+    position: relative;
+    bottom: 0;
+    animation-name: menucards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menucards {
+    0%{
+        opacity: 0;
+        bottom: -100%;
+    }
+    
+   
+    100%{
+
+        opacity: 1;       
+        bottom: -30%;
+    }
+   
+}
+.whole h1{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+#desigin {
+    position: absolute;
+    top: 0;
+    animation-name:topheading;
+    animation-fill-mode: forwards;
+
+}
+@keyframes topheading {
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+#desigin nav{
+    text-align: center;
+}
+#forAnimate{
+    margin-top: 10%;
+    animation-name: headingmoves;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes headingmoves {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        opacity: 0.1;
+        transform: scale(20%);
+    }
+    100%{
+        transform: scale(120%);
+        transform: translateX(50%);
+    }
+}
